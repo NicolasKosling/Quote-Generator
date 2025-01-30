@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a202c; /* Matches bg-gray-900 */
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .card {
+    background-color: #2d3748; /* Matches bg-gray-800 */
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    max-width: 28rem;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    .quote {
+      font-size: 1.5rem; /* Larger quote text */
+      font-weight: 600;
+      color: #e2e8f0; /* Light text for better contrast */
+      margin: 1.5rem 0;
+    }
+
+    .advice {
+      font-size: 0.875rem; /* Smaller advice text */
+      font-weight: 700;
+      color: #38a169; /* Green accent */
+      margin-bottom: 1rem;
+    }
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background-color: #4a5568; /* Subtle divider */
+      margin: 1rem 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .copy-button {
+        background: none;
+        border: none;
+        color: #e2e8f0; /* Matches text color */
+        cursor: pointer;
+        padding: 0;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #a0aec0; /* Slightly lighter on hover */
+        }
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        width: 3rem;
+        height: 3rem;
+        background-color: #38a169; /* Green button */
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background-color: #2f855a; /* Darker hover effect */
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px #68d391; /* Accessible focus ring */
+        }
+      }
+    }
+  }
+}
